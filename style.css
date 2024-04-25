@@ -6,9 +6,19 @@
     color: black;
 }
 
-.changing-tabs {
+
+.nav-tabs {
     display: flex;
     justify-content: center;
+}
+
+.grid-pics {
+    display:flex;
+    flex-direction: row;
+}
+
+img {
+    width: 30%;
 }
 
 .container-post{
