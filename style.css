@@ -1,0 +1,55 @@
+.instagram-header{
+    color: black; 
+}
+
+.ri-instagram-line{
+    color: black;
+}
+
+.changing-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.container-post{
+   display: flex;
+   justify-content: center;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -17px;
+    background-color: white;
+}
+
+.header-pharagraph {
+    margin-left: auto;
+}
+
+.card-text-likes {
+    margin-top: -10px;
+}
+
+.card-text-info {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.container-post-one {
+   margin-top: 15px;
+
+}
+
+.container-post-two {
+    margin-top: 20px;
+}
+
+.container-post-three {
+    margin-top: 20px;
+}
+
+.container-post-four {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

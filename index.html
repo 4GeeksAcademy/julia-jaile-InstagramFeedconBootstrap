@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram with Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container">
+                      <a class="navbar-brand d-flex align-items-center" href="#">
+                        <i class="ri-instagram-line"></i>
+                        <span class="instagram-header">Instagram</span>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                              <span class="btn btn-success">
+                                Create a new post
+                              </span>
+                            </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="ri-settings-3-fill"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Pofile</a>
+                              <a class="dropdown-item" href="#">Accessibility</a>
+                              <a class="dropdown-item" href="#">Privacy and data</a>
+                              <hr class="dropdown-divider">
+                              <a class="dropdown-item text-danger" href="#">Logout</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="changing-tabs">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="ri-grid-line"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="ri-square-fill"></i>
+              </a>
+            </li>
+          </ul> 
+        </div>
+        <div class="container-post">
+          <div class="container-post-one">
+             <div class="card" style="width: 30rem;">
+              <div class="card-header">
+                <h5 class="card-title">My crazy jellyfish!</h5>
+                <p class="header-pharagraph">08/26</p>
+              </div>
+              <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="jellyfish">
+              <div class="card-body">
+                <p class="card-text-likes"><b>250 likes</b></p>
+                <p class="card-text-info">Look how pretty my jellyfish looks in this astonishing picture!</p>
+              </div>
+           </div>
+          <div class="container-post-two">
+            <div class="card" style="width: 30rem;">
+              <div class="card-header">
+                <h5 class="card-title">Trip to Montserrat!</h5>
+                <p class="header-pharagraph">09/10</p>
+              </div>
+              <img src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Montserrat mountain">
+              <div class="card-body">
+                <p class="card-text-likes"><b>400 likes</b></p>
+                <p class="card-text-info">It was an amazing day visiting this astonishing mountain. Don't miss it!</p>
+              </div>
+            </div>
+          </div>  
+         <div class="container-post-three">
+            <div class="card" style="width: 30rem;">
+              <div class="card-header">
+                <h5 class="card-title">Crossfit competition day</h5>
+                <p class="header-pharagraph">06/10</p>
+              </div>
+              <img src="https://images.pexels.com/photos/7674487/pexels-photo-7674487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="woman trainning">
+              <div class="card-body">
+                <p class="card-text-likes"><b>365 likes</b></p>
+                <p class="card-text-info">Keep trainning, never give up. No pain, no gain!</p>
+              </div>
+            </div>
+          </div>
+         <div class="container-post-four">
+              <div class="card" style="width: 30rem;">
+                <div class="card-header">
+                  <h5 class="card-title">Vegan meals, the best option</h5>
+                  <p class="header-pharagraph">05/23</p>
+                </div>
+                <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="vegan food">
+                <div class="card-body">
+                  <p class="card-text-likes"><b>160 likes</b></p>
+                  <p class="card-text-info">For the animals, for your health and for the planet!</p>
+                </div>
+              </div>  
+          </div>      
+      </div>
+    </div>
+</body>
+</html>
