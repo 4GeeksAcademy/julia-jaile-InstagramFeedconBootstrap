@@ -17,24 +17,24 @@
                         <a class="navbar-brand d-flex align-items-center" href="#"><i class="ri-instagram-line"></i>
                           <span class="instagram-header">Instagram</span>
                         </a>
-                        <div class="dropdown justify-content-end">
+                        <div class="dropdown d-grid gap-2 d-md-flex justify-content-md-end">
                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal" >
                                Create a new post
                             </button>
-                            <div class="dropdown">
+                            <div class="nav-item dropdown">
                                <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                  <i class="ri-settings-3-fill"></i>
                                </button>
                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                                  <hr class="dropdown-divider">
-                                  <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                                  <li><a class="dropdown-item active" href="#">Accessibility</a></li>
+                                  <li><a class="dropdown-item active" href="#">Privacy and data</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item active text-danger" href="#">Logout</a></li>
                                </ul>
                              </div>
                          </div>
-                     </div>
+                  </div>
                  </nav>
 
                   <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
@@ -42,7 +42,7 @@
                         <div class="modal-content container-fluid">
                           <div class="modal-header col-7">
                             <h4 class="modal-title">Create a new post</h4>
-                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
                           </div>
                           <div class="modal-body">
                             <form>
