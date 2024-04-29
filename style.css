@@ -1,5 +1,6 @@
 .instagram-header{
     color: black; 
+    margin-left: 5px;
 }
 
 .ri-instagram-line{
@@ -12,20 +13,39 @@
     justify-content: center;
 }
 
+.btn-close {
+    margin-right: auto;
+}
+
+.form-control {
+    color: lightgray;
+}
+
+.modal-icons {
+    display: flex;  
+}
+
+.modal-icons-button{
+    margin-right:5px;
+    border-style: none;
+    background-color: #F0F0F6;
+}
+
 .grid-pics {
     display:flex;
+    align-items: flex-end;
     flex-direction: row;
-    align-items:center;
+}
+.img-vegan-food {
+    margin-top: 15px;
 }
 
-.first-pics-row {
-    margin-right: 15px,
-}
 
-img {
+#img-grid {
     width:100%;
     height:auto;
     margin-bottom: 15px;
+    margin-right: auto;
 }
 
 

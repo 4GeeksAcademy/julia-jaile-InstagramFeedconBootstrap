@@ -4,67 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Instagram with Bootstrap</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg bg-light">
-                   <div class="container-fluid">
-                        <a class="navbar-brand d-flex align-items-center" href="#"><i class="ri-instagram-line"></i>
-                          <span class="instagram-header">Instagram</span>
-                        </a>
-                        <div class="dropdown d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal" >
-                               Create a new post
-                            </button>
-                            <div class="nav-item dropdown">
-                               <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 <i class="ri-settings-3-fill"></i>
-                               </button>
-                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item active" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item active" href="#">Accessibility</a></li>
-                                  <li><a class="dropdown-item active" href="#">Privacy and data</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item active text-danger" href="#">Logout</a></li>
-                               </ul>
-                             </div>
-                         </div>
-                  </div>
-                 </nav>
-
-                  <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-                      <div class="modal-dialog">
-                        <div class="modal-content container-fluid">
-                          <div class="modal-header col-7">
-                            <h4 class="modal-title">Create a new post</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Caption:</label>
-                                <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
-                              </div>
-                            </form>
-                            <i class="ri-camera-fill"></i>
-                            <i class="ri-map-pin-2-fill"></i>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
-                          </div>
-                        </div>
+  <div class="container">
+    <p>hola</p>
+       <div class="row">
+         <div class="col-12">
+           <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                  <a class="navbar-brand d-flex align-items-center" href="#"><i class="ri-instagram-line"></i>
+                    <span class="instagram-header">Instagram</span>
+                  </a>
+                  <div class="dropdown d-grid gap-2 d-md-flex justify-content-md-end">
+                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal" >
+                        Create a new post
+                     </button>
+                     <div class="nav-item dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" 
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="ri-settings-3-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item active" href="#">Profile</a></li>
+                           <li><a class="dropdown-item active" href="#">Accessibility</a></li>
+                           <li><a class="dropdown-item active" href="#">Privacy and data</a></li>
+                           <li><hr class="dropdown-divider"></li>
+                           <li><a class="dropdown-item active text-danger" href="#">Logout</a></li>
+                        </ul>
                       </div>
-                    </div>
-            </div>
+               </div>
+           </nav>
          </div>
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+         <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+               <div class="modal-dialog">
+                 <div class="modal-content container-fluid">
+                   <div class="modal-header col-12">
+                     <h4 class="modal-title">Create a new post</h4>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <form>
+                       <div class="mb-3">
+                         <label for="message-text" class="col-form-label">Caption:</label>
+                         <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                       </div>
+                     </form>
+                     <div class="modal-icons">
+                       <button class="modal-icons-button"><i class="ri-camera-fill"></i></button>
+                       <button class="modal-icons-button"><i class="ri-map-pin-2-fill"></i></button>
+                     </div>         
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+                   </div>
+                 </div>
+               </div>
+           </div>
+        </div>
+     </div>
+                
+     <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
               <i class="ri-grid-line"></i>
@@ -75,103 +78,103 @@
               <i class="ri-square-fill"></i>
             </button>
           </li>
-        </ul>
+     </ul>
 
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-           <div class="container grid-pics"> 
-             <div class="first-pics-row">
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="jellyfish">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Montserrat mountain">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kettelbell picture">
-               </div>
-             </div>
-             <div class="second-pics-row">
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="vegan food">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="sunset by the sea">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="forest">
-               </div>
-             </div>
-             <div class="third-pics-row">
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="berlin Brandenburg Door">
-               </div>
-               <div class="col">
-                 <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barcelona">
-               </div>
-             </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-           <div class="container-post">
-              <div class="container-post-one">
-                <div class="card" style="width: 30rem;">
-                  <div class="card-header">
-                    <h5 class="card-title">My crazy jellyfish!</h5>
-                    <p class="header-pharagraph">08/26</p>
-                  </div>
-                  <img src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="jellyfish">
-                  <div class="card-body">
-                    <p class="card-text-likes"><b>250 likes</b></p>
-                    <p class="card-text-info">Look how pretty my jellyfish looks in this astonishing picture!</p>
-                  </div>
+     <div class="tab-content" id="myTabContent">
+         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="container grid-pics"> 
+              <div class="first-pics-row">
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="jellyfish">
+                </div>
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Montserrat mountain">
+                </div>
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kettelbell picture">
                 </div>
               </div>
-             <div class="container-post-two">
-                <div class="card" style="width: 30rem;">
-                   <div class="card-header">
-                     <h5 class="card-title">Trip to Montserrat!</h5>
-                     <p class="header-pharagraph">09/10</p>
-                   </div>
-                   <img src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Montserrat mountain">
-                   <div class="card-body">
-                      <p class="card-text-likes"><b>400 likes</b></p>
-                      <p class="card-text-info">It was an amazing day visiting this astonishing mountain. Don't miss it!</p>
-                   </div>
-                 </div>
-              </div>  
-              <div class="container-post-three">
+              <div class="second-pics-row">
+                <div class="col">
+                  <img id="img-grid" class="img-vegan-food" src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="vegan food">
+                </div>
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="sunset by the sea">
+                </div>
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="forest">
+                </div>
+              </div>
+              <div class="third-pics-row">
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat">
+                </div>
+                <div class="col">
+                  <img id="img-grid" src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="berlin Brandenburg Door">
+                </div>
+                <div class="col">
+                  <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barcelona">
+                </div>
+              </div>
+            </div>
+         </div>
+       </div>
+       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+           <div class="container-post">
+               <div class="container-post-one">
                  <div class="card" style="width: 30rem;">
                    <div class="card-header">
-                      <h5 class="card-title">Crossfit competition day</h5>
-                      <p class="header-pharagraph">06/10</p>
+                     <h5 class="card-title">My crazy jellyfish!</h5>
+                     <p class="header-pharagraph">08/26</p>
                    </div>
-                   <img src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="woman trainning">
+                   <img src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="jellyfish">
                    <div class="card-body">
-                     <p class="card-text-likes"><b>365 likes</b></p>
-                     <p class="card-text-info">Keep trainning, never give up. No pain, no gain!</p>
+                     <p class="card-text-likes"><b>250 likes</b></p>
+                     <p class="card-text-info">Look how pretty my jellyfish looks in this astonishing picture!</p>
                    </div>
                  </div>
                </div>
-              <div class="container-post-four">
+               <div class="container-post-two">
                  <div class="card" style="width: 30rem;">
                     <div class="card-header">
-                       <h5 class="card-title">Vegan meals, the best option</h5>
-                       <p class="header-pharagraph">05/23</p>
-                     </div>
-                    <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="vegan food">
-                    <div class="card-body">
-                      <p class="card-text-likes"><b>160 likes</b></p>
-                      <p class="card-text-info">For the animals, for your health and for the planet!</p>
+                      <h5 class="card-title">Trip to Montserrat!</h5>
+                      <p class="header-pharagraph">09/10</p>
                     </div>
+                    <img src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Montserrat mountain">
+                    <div class="card-body">
+                       <p class="card-text-likes"><b>400 likes</b></p>
+                       <p class="card-text-info">It was an amazing day visiting this astonishing mountain. Don't miss it!</p>
+                    </div>
+                  </div>
+                </div>  
+                <div class="container-post-three">
+                  <div class="card" style="width: 30rem;">
+                    <div class="card-header">
+                       <h5 class="card-title">Crossfit competition day</h5>
+                       <p class="header-pharagraph">06/10</p>
+                    </div>
+                    <img src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="woman trainning">
+                    <div class="card-body">
+                      <p class="card-text-likes"><b>365 likes</b></p>
+                      <p class="card-text-info">Keep trainning, never give up. No pain, no gain!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-post-four">
+                  <div class="card" style="width: 30rem;">
+                     <div class="card-header">
+                        <h5 class="card-title">Vegan meals, the best option</h5>
+                        <p class="header-pharagraph">05/23</p>
+                     </div>
+                     <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="vegan food">
+                     <div class="card-body">
+                       <p class="card-text-likes"><b>160 likes</b></p>
+                       <p class="card-text-info">For the animals, for your health and for the planet!</p>
+                     </div>
                   </div>  
-               </div>      
-            </div>  
-          </div>
-        </div>
+                </div>      
+           </div>  
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
