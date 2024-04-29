@@ -33,21 +33,39 @@
 
 .grid-pics {
     display:flex;
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
     justify-items: center;
 
+=======
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.vegan-food {
+    height: 90%;
+>>>>>>> 06c18dafd6d69059e8262d4145d718edf31804e2
 }
 
 .col {
     padding: 5px;
 }
 
+<<<<<<< HEAD
 img {
     object-fit: cover;
     width: 100%;
     height: 100%; 
 }
+=======
+>>>>>>> 06c18dafd6d69059e8262d4145d718edf31804e2
 
 
 .container-post{
