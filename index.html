@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Instagram with Bootstrap</title>
 </head>
 <body>
   <div class="container">
-    <p>hola</p>
        <div class="row">
          <div class="col-12">
            <nav class="navbar navbar-expand-lg bg-light">
@@ -22,19 +22,21 @@
                         Create a new post
                      </button>
                      <div class="nav-item dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" 
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="ri-settings-3-fill"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                           <li><a class="dropdown-item active" href="#">Profile</a></li>
-                           <li><a class="dropdown-item active" href="#">Accessibility</a></li>
-                           <li><a class="dropdown-item active" href="#">Privacy and data</a></li>
+                       <div class="btn-group">
+                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="ri-settings-3-fill"></i>
+                         </button>
+                         <ul class="dropdown-menu dropdown-menu-end">
+                           <li><button class="dropdown-item" type="button">Profile</button></li>
+                           <li><button class="dropdown-item" type="button">Accessibility</button></li>
+                           <li><button class="dropdown-item" type="button">Privacy and data</button></li>
                            <li><hr class="dropdown-divider"></li>
-                           <li><a class="dropdown-item active text-danger" href="#">Logout</a></li>
-                        </ul>
+                           <li><button class="dropdown-item text-danger" type="button">Logout</button></li>
+                         </ul>
+                       </div>
                       </div>
-               </div>
+                  </div>
+                </div>
            </nav>
          </div>
 
@@ -83,34 +85,34 @@
      <div class="tab-content" id="myTabContent">
          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <div class="container grid-pics"> 
-              <div class="first-pics-row">
+              <div class="first-pics row">
                 <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="jellyfish">
+                  <img src="https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="jellyfish">
                 </div>
                 <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Montserrat mountain">
+                  <img src="https://images.pexels.com/photos/17585148/pexels-photo-17585148/free-photo-of-paisatge-muntanyes-fita-roques.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Montserrat mountain">
                 </div>
                 <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kettelbell picture">
-                </div>
-              </div>
-              <div class="second-pics-row">
-                <div class="col">
-                  <img id="img-grid" class="img-vegan-food" src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="vegan food">
-                </div>
-                <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="sunset by the sea">
-                </div>
-                <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="forest">
+                  <img src="https://images.pexels.com/photos/3766211/pexels-photo-3766211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kettelbell picture">
                 </div>
               </div>
-              <div class="third-pics-row">
+              <div class="second-pics row">
                 <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat">
+                  <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="vegan food">
                 </div>
                 <div class="col">
-                  <img id="img-grid" src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="berlin Brandenburg Door">
+                  <img src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="sunset by the sea">
+                </div>
+                <div class="col">
+                  <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="forest">
+                </div>
+              </div>
+              <div class="third-pics row">
+                <div class="col">
+                  <img src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat">
+                </div>
+                <div class="col">
+                  <img src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="berlin Brandenburg Door">
                 </div>
                 <div class="col">
                   <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barcelona">
@@ -118,8 +120,7 @@
               </div>
             </div>
          </div>
-       </div>
-       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
            <div class="container-post">
                <div class="container-post-one">
                  <div class="card" style="width: 30rem;">
@@ -174,10 +175,8 @@
                   </div>  
                 </div>      
            </div>  
-      </div>
-    </div>
+         </div>
+     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
